@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>市场风向标-客户发掘版</title>
+	<link rel="stylesheet" href="asset/css/manifest.css">
+	<script type="text/javascript" src="asset/js/manifest.js"></script>
+</head>
+<body>
+	<div class="head-wrapper">
+		<div class="head">
+			<a class="logo-head" href="http://www.baidu.com/shifen/content.php"></a>
+			<div class="headline">市场风向标</div>
+		</div>
+	</div>
+	<div class="main">
+		<div id="rangeSetting">
+				<label>选择时间范围：</label>
+				<span id="dateSetting"></span>
+				<label>选择地域范围：</label>
+				<span id="regionShow"></span>
+				<span id="goSearch">查询</span>
+				<span id="rangeLoadingTip" class="loading_tip"></span>
+		</div>
+		
+		<div id="catalogTab" class="catalog-tab clearfix">
+			<!--<ul>
+				<li><a href="#potentialBusiness">潜力行业</a></li>
+				<li><a href="#businessTrend">行业趋势</a></li>
+			</ul>-->
+			<div id="potentialBusiness" class="clearfix">
+				<div class="main_ranking">
+					<h2>TOP15 潜力行业排名</h2>
+					<div id="topnPotential"></div>
+				</div>
+				<div class="detail_ranking">
+					<!--<h2>"<span class="busiName red"></span>"行业详情</h2>-->
+					<form method="post" action="/cbd/download" id="downloadWordsForm">
+			            <input type="hidden" name="params">
+			        </form>
+					<div id="subRankChoice">
+						<span id="wordrankLoadingTip" class="loading_tip"></span>
+						<input type="radio" id="subRankWeekRadio" name="subRankChoice" />
+						<label for="subRankWeekRadio" mark="week" class="label_choice">最近七天</label>
+						<input type="radio" id="subRankMonthRadio" name="subRankChoice" />
+						<label for="subRankMonthRadio" mark="month" class="label_choice last_label_choice">最近一个月</label>
+					</div>
+					<div id="keywordDownload">下载关键词</div>
+					<div id="topnWeek" class="clearfix">
+						<div class="sub_ranking" id="topnWeekSearch"></div>
+						<div class="sub_ranking" id="topnWeekShow"></div>
+					</div>
+					<div id="topnMonth" class="clearfix">
+						<div class="sub_ranking" id="topnMonthSearch"></div>
+						<div class="sub_ranking" id="topnMonthShow"></div>
+					</div>
+				</div>
+			</div>
+			<div id="businessTrend" class="clearfix">
+				<div class="main_ranking">
+					<h2>TOP15 热门二级行业排名</h2>
+					<div id="topnDeveloped"></div>
+				</div>
+				<div class="detail_chart">
+					<!--<h2>"<span class="busiName red"></span>"行业趋势</h2>-->
+					<div id="subChartChoice">
+						<span id="trendchartLoadingTip" class="loading_tip"></span>
+						<input type="radio" id="subChartWeekRadio" name="subChartChoice"/>
+						<label for="subChartWeekRadio" mark="week" class="label_choice">周变化</label>
+						<input type="radio" id="subChartMonthRadio" name="subChartChoice" />
+						<label for="subChartMonthRadio" mark="month" class="label_choice">月变化</label>
+						<input type="radio" id="subChartQuarterRadio" name="subChartChoice" />
+						<label for="subChartQuarterRadio" mark="quarter" class="label_choice last_label_choice">季度变化</label>
+					</div>
+					<div id="detailChart"></div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	<div class="foot">
+		<span>Copyright 2012 Badiu Ecom</span>
+	</div>
+</body>
+</html>

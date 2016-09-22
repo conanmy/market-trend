@@ -1,0 +1,19 @@
+.ui_topn th,
+.ui_topn td {
+    font-size: 13px;
+    line-height: 18px;
+    height: 18px;
+    padding: 4px 0;
+    zoom: 1;
+}
+.ui_topn .value-bar {
+    background: #74B1E0;
+    float: left;
+    border-radius: 2px;
+}
+.ui_topn .value-literal {
+    display: inline;
+    margin-left: 5px;
+}
+
+

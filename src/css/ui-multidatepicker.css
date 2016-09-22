@@ -1,0 +1,28 @@
+.ui-multidatepicker {
+	padding: 5px;
+}
+.start-picker {
+	float:left;
+}
+.end-picker {
+	float:left;
+}
+.ui-multidatepicker .toolbar{
+	clear: both;
+	padding-top: 5px;
+}
+.main-picker h2{
+	font-size: 12px;
+	margin: 5px 0 0 0;
+}
+.selected-quick {
+	font-weight: bold;
+}
+.quick-select a {
+	cursor: pointer;
+}
+.ui-multidatepicker .ui-icon-closethick {
+	right: 5px;
+	top: 5px;
+	position: absolute;
+}
